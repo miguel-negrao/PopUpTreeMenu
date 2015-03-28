@@ -52,7 +52,7 @@ PopUpTreeMenu : SCViewHolder {
 		//--create popUpMenu.  visible when submenus not open
 		pop= PopUpMenu(argParent, argBounds)
 			.font_(font)
-			.background_(Color.clear)
+			//.background_(Color.clear)
 			.stringColor_(Color.black);
 		bounds= pop.bounds;
 		pop.onClose= {lst.do{|z| if(z[1].notNil, {z[1].close})}};
